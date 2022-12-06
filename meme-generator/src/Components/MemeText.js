@@ -15,18 +15,18 @@ export default function MemeText({ meme, setMeme }) {
 		border: "none",
 	};
 	return (
-		<form className="container border mt-4">
-			<p className="text-light h5 mb-2">Enter meme text</p>
+		<form className="container mt-4 w-75">
+			<p className="text-light fw-bold h5 mb-2">Enter meme text</p>
 
 			<div className="input-group d-flex mb-3" style={btnStyles}>
 				<button type="button" className="btn">
-					<i className="fas fa-bus" aria-hidden="true"></i>
+					<i className="fa-sharp fas fa-font" aria-hidden="true"></i>
 				</button>
 				<input
 					className="form-control d-flex"
 					style={btnStyles}
 					type="text"
-					placeholder="Top Text"
+					placeholder="Text at Top"
 					value={meme.topText}
 					name="topText"
 					onChange={handleChange}
@@ -34,13 +34,13 @@ export default function MemeText({ meme, setMeme }) {
 			</div>
 			<div className="input-group d-flex mb-3" style={btnStyles}>
 				<button type="button" className="btn">
-					<i className="fas fa-bicycle" aria-hidden="true"></i>
+					<i className="fa-sharp fas fa-font" aria-hidden="true"></i>
 				</button>
 				<input
 					className="form-control"
 					style={btnStyles}
 					type="text"
-					placeholder="Bottom Text"
+					placeholder="Text at Bottom"
 					value={meme.bottomText}
 					name="bottomText"
 					onChange={handleChange}

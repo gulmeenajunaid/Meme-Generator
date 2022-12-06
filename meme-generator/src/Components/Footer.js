@@ -6,8 +6,9 @@ export default function Footer() {
 	};
 	return (
 		<div
-			className="container-fluid w-100 ps-5 pe-5 mt-5 position-absolute bottom-0"
-			style={footerStyle}
+			className="container-fluid w-100 ps-5 pe-5 position-absolute bottom-0"
+			style={{ backgroundColor: "#011B19" }}
+			// style={footerStyle}
 		>
 			<footer className="p-1 text-light text-center align-items-center">
 				Copyright © 2022

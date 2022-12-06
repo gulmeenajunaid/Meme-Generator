@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../App.css";
 
 export default function MemeImage({ meme, setMeme, allMemes }) {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -18,7 +19,10 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 		const filteredMeme = allMemes.filter((meme) =>
 			meme.name.toLowerCase().includes(e.target.value.toLowerCase())
 		);
+		console.log(filteredMeme);
+
 		const url = filteredMeme[0].url;
+		console.log(url);
 		setMeme({
 			...meme,
 			randomImg: url,
@@ -40,10 +44,11 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 		color: "rgba(3, 66, 62, 0.9)",
 		fontWeight: "600",
 		border: "none",
+		textAlign: "start",
 	};
 	return (
-		<div className="container border">
-			<p className="text-light h5 mt-1">Choose an image</p>
+		<div className="container w-75">
+			<p className="text-light fw-bold h5 mb-2 mt-1">Choose an image</p>
 			{/* <div className="btn-group-vertical"> */}
 			{/* Search-Button */}
 			<div className="input-group d-flex mb-3" style={btnStyles}>
@@ -54,7 +59,7 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 					type="text"
 					className="form-control d-flex"
 					aria-label="Text input for meme image search"
-					placeholder="Search for trending meme images"
+					placeholder="Search for meme image"
 					style={btnStyles}
 					value={searchQuery}
 					onChange={searchHandler}

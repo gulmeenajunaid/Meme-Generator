@@ -25,20 +25,24 @@ function App() {
 	return (
 		<div
 			className="container-fluid min-vh-100 m-0 p-0 position-relative"
-			style={{
-				background:
-					"linear-gradient(180deg, #032826 7%, rgba(178, 227, 206, 0.651094) 75%, rgba(2, 255, 240, 0.13) 100%)",
-			}}
+			id="App-container"
+			style={{ backgroundColor: "#011B19" }}
 		>
 			<Header />
-			<div className="container mt-4 p-5 border border-danger justify-content-center align-items-start">
+			<div
+				className="container p-5 justify-content-center align-items-center"
+				style={{
+					background:
+						"linear-gradient(180deg, #032826 10%, rgba(178, 227, 206, 0.651094) 100%, rgba(2, 255, 240, 0.13) 100%)",
+				}}
+			>
 				<div className="row">
-					<div className="col border border-primary">
+					<div className="col">
 						<MemeImage meme={meme} setMeme={setMeme} allMemes={allMemes} />
 						<MemeText meme={meme} setMeme={setMeme} />
 						<ColorPicker textColor={textColor} setTextColor={setTextColor} />
 					</div>
-					<div className="col border border-primary my-auto">
+					<div className="col">
 						<Meme meme={meme} textColor={textColor} />
 					</div>
 				</div>

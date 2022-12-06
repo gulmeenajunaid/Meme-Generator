@@ -15,3 +15,11 @@
 	font-size: calc(10px + 2vmin);
 	color: white;
 }
+input::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: red;
+	opacity: 1; /* Firefox */
+}
+#App-container {
+	font-size: 12px;
+}

@@ -5,17 +5,17 @@ export default function Meme({ meme, textColor }) {
 		color: textColor,
 	};
 	return (
-		<div className="container border border-warning">
-			<div className="d-flex border border-warning justify-content-center align-items-center position-relative">
+		<div className="container mt-4">
+			<div className="d-flex justify-content-center align-items-center position-relative">
 				<img className="bg-img mw-100 mh-100" src={meme.randomImg} alt="meme" />
 				<h2
-					className="p-3 fw-bold shadow position-absolute top-0"
+					className="p-3 fw-bold shadow position-absolute top-0 w-75 text-break text-center"
 					style={textStyle}
 				>
 					{meme.topText}
 				</h2>
 				<h2
-					className="p-3 fw-bold shadow position-absolute bottom-0"
+					className="p-3 fw-bold shadow position-absolute bottom-0 w-75 text-break text-center"
 					style={textStyle}
 				>
 					{meme.bottomText}
