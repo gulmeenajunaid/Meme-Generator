@@ -1,3 +1,5 @@
+import "../App.css";
+
 export default function MemeText({ meme, setMeme }) {
 	function handleChange(e) {
 		const { name, value } = e.target;
@@ -15,8 +17,8 @@ export default function MemeText({ meme, setMeme }) {
 		border: "none",
 	};
 	return (
-		<form className="container mt-4 w-75">
-			<p className="text-light fw-bold h5 mb-2">Enter meme text</p>
+		<form className="container mt-4">
+			<p className="text-light fw-bold h5 mb-2">2. Enter meme text</p>
 
 			<div className="input-group d-flex mb-3" style={btnStyles}>
 				<button type="button" className="btn">

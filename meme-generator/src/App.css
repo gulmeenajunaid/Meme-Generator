@@ -1,25 +1,15 @@
-.App {
-	text-align: center;
-	display: flex;
-	background: linear-gradient(to right, #00aaff, #00ff6c);
-	min-height: 100vh;
+input:focus,
+input:active {
+	box-shadow: none !important;
 }
 
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-input::placeholder {
-	/* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: red;
-	opacity: 1; /* Firefox */
-}
-#App-container {
-	font-size: 12px;
+input[type="file"]::file-selector-button {
+	border: none;
+	padding: 0.45em;
+	font-weight: 600;
+	color: rgba(3, 66, 62, 0.9);
+	background-color: #b3d6d4;
+	border-radius: 0px !important;
+	/* background: "linear-gradient(180deg, #FFFFFF 0%, #669592 100%)"; */
+	border: none;
 }

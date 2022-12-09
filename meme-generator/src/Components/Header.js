@@ -1,19 +1,50 @@
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 export default function Header() {
 	return (
-		<nav
-			className="navbar navbar-expand-lg navbar-light py-0 px-5"
-			style={{ backgroundColor: "#011B19" }}
-		>
-			<div className="container-fluid px-5 py-1">
-				<h1 className="navbar-brand h1 fw-bold text-light">
-					Meme Generator
-					<small className="text-muted"> - Get Set Meme</small>
-				</h1>
-
-				{/* <div className="navbar-nav d-flex pt-3">
-					<p className="nav-item text-light">Get Set Meme</p>
-				</div> */}
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+			<div className="container">
+				<Link className="navbar-brand" to="/Home">
+					<i class="fa-solid fa-face-laugh-beam me-2"></i>
+					Get Set Meme
+				</Link>
+				<button
+					className="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span className="navbar-toggler-icon"></span>
+				</button>
+				<div
+					className="collapse navbar-collapse  justify-content-end"
+					id="navbarNav"
+				>
+					<ul className="navbar-nav">
+						<CustomLink to="/Home">Home</CustomLink>
+						<CustomLink to="/MemeGenerator">Get Started</CustomLink>
+					</ul>
+				</div>
 			</div>
 		</nav>
+	);
+}
+
+function CustomLink({ to, children, ...props }) {
+	return (
+		<li className="nav-item me-3">
+			<Link className="nav-link" to={to} {...props}>
+				<i
+					className={
+						to === "/Home"
+							? " fas fa-sharp fa-home mx-1"
+							: "fas fa-sharp fa-rocket mx-1"
+					}
+				></i>
+				{children}
+			</Link>
+		</li>
 	);
 }

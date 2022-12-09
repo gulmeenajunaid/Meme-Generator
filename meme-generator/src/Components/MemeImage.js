@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../App.css";
 
 export default function MemeImage({ meme, setMeme, allMemes }) {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -47,16 +46,15 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 		textAlign: "start",
 	};
 	return (
-		<div className="container w-75">
-			<p className="text-light fw-bold h5 mb-2 mt-1">Choose an image</p>
-			{/* <div className="btn-group-vertical"> */}
+		<div className="container">
+			<p className="text-light fw-bold h5 mb-2 mt-1">1. Choose an image</p>
 			{/* Search-Button */}
 			<div className="input-group d-flex mb-3" style={btnStyles}>
 				<button type="button" className="btn">
 					<i className="fas fa-search" aria-hidden="true"></i>
 				</button>
 				<input
-					type="text"
+					type="search"
 					className="form-control d-flex"
 					aria-label="Text input for meme image search"
 					placeholder="Search for meme image"
@@ -84,14 +82,13 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 				</button>
 				<input
 					type="button"
-					className="form-control"
+					className="form-control d-flex"
 					onClick={getNewImage}
 					style={btnStyles}
 					value="Get a random meme image"
 					readOnly
 				/>
 			</div>
-			{/* </div> */}
 		</div>
 	);
 }
