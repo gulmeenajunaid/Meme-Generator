@@ -5,10 +5,7 @@ export default function Home() {
 			<div className="py-5 mt-3">
 				<div
 					className="text-light shadow text-center py-4 px-5 m-5"
-					style={{
-						background: "linear-gradient(180deg, #669592 0%, #8B8B8B 100%)",
-						borderRadius: "40px",
-					}}
+					id="banner"
 				>
 					<h2>Always be Meme Ready</h2>
 					<div className="m-3 p-2 mw-50">
@@ -35,12 +32,7 @@ export default function Home() {
 							Not sure what you are looking for? Let us pick one for you!
 						</li>
 					</ul>
-					<button
-						className="btn rounded-3 fw-bold"
-						style={{
-							background: "linear-gradient(180deg, #FFFFFF 0%, #669592 100%)",
-						}}
-					>
+					<button className="btn rounded-3 fw-bold" id="get-started-btn">
 						<Link
 							className="text text-decoration-none text-reset fs-5 p-1"
 							to="/MemeGenerator"

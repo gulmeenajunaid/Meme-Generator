@@ -21,3 +21,11 @@ input[type="file"]::file-selector-button {
 		rgba(2, 255, 240, 0.13) 100%
 	);
 }
+#banner {
+	background: linear-gradient(180deg, #669592 0%, #8b8b8b 100%);
+	border-radius: 40px;
+}
+
+#get-started-btn {
+	background: linear-gradient(180deg, #ffffff 0%, #669592 100%);
+}
