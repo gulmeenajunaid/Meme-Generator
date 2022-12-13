@@ -10,21 +10,25 @@ export default function Meme({ meme, textColor, setAllMemes }) {
 	}, []);
 	return (
 		<div className="container mt-4">
-			<div className="container d-flex justify-content-center align-items-center position-relative">
-				<img className="bg-img mw-100 mh-100" src={meme.randomImg} alt="meme" />
-				<h2
-					className="p-3 fw-bold position-absolute top-0 w-75 text-break text-center"
+			<figure className="container d-flex justify-content-center align-items-center position-relative">
+				<img
+					className="bg-img mw-100 mh-100 rounded"
+					src={meme.randomImg}
+					alt={meme.name}
+				/>
+				<figcaption
+					className="p-3 fw-bold position-absolute top-0 w-75 text-break text-center h2"
 					style={textStyle}
 				>
 					{meme.topText}
-				</h2>
-				<h2
-					className="p-3 fw-bold position-absolute bottom-0 w-75 text-break text-center"
+				</figcaption>
+				<figcaption
+					className="p-3 fw-bold position-absolute bottom-0 w-75 text-break text-center h2"
 					style={textStyle}
 				>
 					{meme.bottomText}
-				</h2>
-			</div>
+				</figcaption>
+			</figure>
 		</div>
 	);
 }

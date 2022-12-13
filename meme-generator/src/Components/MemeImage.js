@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function MemeImage({ meme, setMeme, allMemes }) {
 	const [searchQuery, setSearchQuery] = useState("");
+	let url = "";
 
 	function getNewImage(e) {
 		e.preventDefault();
@@ -18,10 +19,11 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 		const filteredMeme = allMemes.filter((meme) =>
 			meme.name.toLowerCase().includes(e.target.value.toLowerCase())
 		);
-		console.log(filteredMeme);
-
-		const url = filteredMeme[0].url;
-		console.log(url);
+		if (filteredMeme.length <= 0) {
+			url = "./Images/404Error-2.jpg";
+		} else {
+			url = filteredMeme[0].url;
+		}
 		setMeme({
 			...meme,
 			randomImg: url,
@@ -30,7 +32,7 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 
 	function uploadImage(e) {
 		e.preventDefault();
-		const url = URL.createObjectURL(e.target.files[0]);
+		url = URL.createObjectURL(e.target.files[0]);
 		setMeme({
 			...meme,
 			randomImg: url,
