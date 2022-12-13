@@ -21,7 +21,6 @@ function App() {
 			id="App-container"
 		>
 			<Header />
-			{/* <div className="container"> */}
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/Home" element={<Home />} />
@@ -39,7 +38,6 @@ function App() {
 					}
 				/>
 			</Routes>
-			{/* </div> */}
 			<Footer />
 		</div>
 	);

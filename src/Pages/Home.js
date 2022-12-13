@@ -9,7 +9,7 @@ export default function Home() {
 				>
 					<h2>Always be Meme Ready</h2>
 					<div className="m-3 p-2 mw-50">
-						<span>
+						<figure>
 							<img src="./Images/thumbnail-1.png" />
 							<img src="./Images/thumbnail-2.png" />
 							<img src="./Images/thumbnail-3.png" />
@@ -19,7 +19,7 @@ export default function Home() {
 							<img src="./Images/thumbnail-7.png" />
 							<img src="./Images/thumbnail-8.png" />
 							<img src="./Images/thumbnail-9.png" />
-						</span>
+						</figure>
 					</div>
 					<h5>Create customized memes within seconds</h5>
 					<ul className="list-unstyled">

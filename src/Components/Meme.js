@@ -3,11 +3,13 @@ export default function Meme({ meme, textColor, setAllMemes }) {
 	const textStyle = {
 		color: textColor,
 	};
+
 	useEffect(() => {
 		fetch("https://api.imgflip.com/get_memes")
 			.then((res) => res.json())
 			.then((apiData) => setAllMemes(apiData.data.memes));
 	}, []);
+
 	return (
 		<div className="container mt-4">
 			<figure className="container d-flex justify-content-center align-items-center position-relative">
