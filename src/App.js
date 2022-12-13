@@ -13,7 +13,7 @@ function App() {
 		randomImg: "https://i.imgflip.com/9vct.jpg",
 	});
 	const [allMemes, setAllMemes] = useState([]);
-	const [textColor, setTextColor] = useState("#02302C");
+	const [textColor, setTextColor] = useState("#000000");
 
 	return (
 		<div
