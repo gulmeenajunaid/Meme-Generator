@@ -13,3 +13,11 @@ input[type="file"]::file-selector-button {
 	/* background: "linear-gradient(180deg, #FFFFFF 0%, #669592 100%)"; */
 	border: none;
 }
+#App-container {
+	background: linear-gradient(
+		90deg,
+		#032826 0%,
+		rgba(178, 227, 206, 0.951094) 100%,
+		rgba(2, 255, 240, 0.13) 100%
+	);
+}

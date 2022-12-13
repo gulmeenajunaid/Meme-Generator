@@ -18,31 +18,28 @@ function App() {
 	return (
 		<div
 			className="container-fluid min-vh-100 m-0 p-0 position-relative"
-			style={{
-				background:
-					"linear-gradient(90deg, #032826 0%, rgba(178, 227, 206, 0.951094) 100%, rgba(2, 255, 240, 0.13) 100%)",
-			}}
+			id="App-container"
 		>
 			<Header />
-			<div className="container">
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/Home" element={<Home />} />
-					<Route
-						path="/MemeGenerator"
-						element={
-							<MemeGenerator
-								meme={meme}
-								setMeme={setMeme}
-								allMemes={allMemes}
-								setAllMemes={setAllMemes}
-								textColor={textColor}
-								setTextColor={setTextColor}
-							/>
-						}
-					/>
-				</Routes>
-			</div>
+			{/* <div className="container"> */}
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/Home" element={<Home />} />
+				<Route
+					path="/MemeGenerator"
+					element={
+						<MemeGenerator
+							meme={meme}
+							setMeme={setMeme}
+							allMemes={allMemes}
+							setAllMemes={setAllMemes}
+							textColor={textColor}
+							setTextColor={setTextColor}
+						/>
+					}
+				/>
+			</Routes>
+			{/* </div> */}
 			<Footer />
 		</div>
 	);
