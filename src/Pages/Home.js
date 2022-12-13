@@ -10,15 +10,15 @@ export default function Home() {
 					<h2>Always be Meme Ready</h2>
 					<div className="m-3 px-5 mw-50">
 						<figure>
-							<img src="./Images/thumbnail-1.png" alt="meme thumbnail" />
-							<img src="./Images/thumbnail-2.png" alt="meme thumbnail" />
-							<img src="./Images/thumbnail-3.png" alt="meme thumbnail" />
-							<img src="./Images/thumbnail-4.png" alt="meme thumbnail" />
-							<img src="./Images/thumbnail-5.png" alt="meme thumbnail" />
-							<img src="./Images/thumbnail-6.png" alt="meme thumbnail" />
-							<img src="./Images/thumbnail-7.png" alt="meme thumbnail" />
-							<img src="./Images/thumbnail-8.png" alt="meme thumbnail" />
-							<img src="./Images/thumbnail-9.png" alt="meme thumbnail" />
+							<img src="Images/thumbnail-1.png" alt="meme thumbnail" />
+							<img src="Images/thumbnail-2.png" alt="meme thumbnail" />
+							<img src="Images/thumbnail-3.png" alt="meme thumbnail" />
+							<img src="Images/thumbnail-4.png" alt="meme thumbnail" />
+							<img src="Images/thumbnail-5.png" alt="meme thumbnail" />
+							<img src="Images/thumbnail-6.png" alt="meme thumbnail" />
+							<img src="Images/thumbnail-7.png" alt="meme thumbnail" />
+							<img src="Images/thumbnail-8.png" alt="meme thumbnail" />
+							<img src="Images/thumbnail-9.png" alt="meme thumbnail" />
 						</figure>
 					</div>
 					<h5>Create customized memes within seconds</h5>
