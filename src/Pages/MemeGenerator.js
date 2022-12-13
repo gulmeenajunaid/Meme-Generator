@@ -12,7 +12,7 @@ export default function MemeGenerator({
 	setTextColor,
 }) {
 	return (
-		<div className="container justify-content-around align-items-center mt-5 py-5 px-3 ">
+		<section className="container justify-content-around align-items-center mt-5 py-5 px-3 ">
 			<div className="row">
 				<div className="col col-12 col-md-5">
 					<MemeImage meme={meme} setMeme={setMeme} allMemes={allMemes} />
@@ -23,6 +23,6 @@ export default function MemeGenerator({
 					<Meme meme={meme} textColor={textColor} setAllMemes={setAllMemes} />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

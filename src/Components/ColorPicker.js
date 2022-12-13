@@ -12,7 +12,7 @@ export default function ColorPicker({ textColor, setTextColor }) {
 	}
 
 	return (
-		<div className="container mt-4 mb-4">
+		<section className="container mt-4 mb-4">
 			<p className="text-light fw-bold h5 mb-2">3. Choose text Color</p>
 			<div className="input-group d-flex mb-3" id="input-btn">
 				<button
@@ -35,6 +35,6 @@ export default function ColorPicker({ textColor, setTextColor }) {
 					onChangeComplete={handleColorChange}
 				/>
 			)}
-		</div>
+		</section>
 	);
 }

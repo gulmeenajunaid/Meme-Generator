@@ -1,4 +1,4 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Header() {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
