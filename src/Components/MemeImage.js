@@ -39,19 +39,11 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 		});
 	}
 
-	const btnStyles = {
-		background: "linear-gradient(180deg, #FFFFFF 0%, #669592 100%)",
-		borderRadius: "10px",
-		color: "rgba(3, 66, 62, 0.9)",
-		fontWeight: "600",
-		border: "none",
-		textAlign: "start",
-	};
 	return (
 		<div className="container">
 			<p className="text-light fw-bold h5 mb-2 mt-1">1. Choose an image</p>
 			{/* Search-Button */}
-			<div className="input-group d-flex mb-3" style={btnStyles}>
+			<div className="input-group d-flex mb-3" id="input-btn">
 				<button type="button" className="btn">
 					<i className="fas fa-search" aria-hidden="true"></i>
 				</button>
@@ -60,25 +52,25 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 					className="form-control d-flex"
 					aria-label="Text input for meme image search"
 					placeholder="Search for meme image"
-					style={btnStyles}
+					id="input-btn"
 					value={searchQuery}
 					onChange={searchHandler}
 				/>
 			</div>
 			{/* Upload Image  */}
-			<div className="input-group d-flex mb-3" style={btnStyles}>
+			<div className="input-group d-flex mb-3" id="input-btn">
 				<button className="btn" type="button">
 					<i className="fas fa-camera" aria-hidden="true"></i>
 				</button>
 				<input
 					type="file"
 					className="form-control d-flex"
-					style={btnStyles}
+					id="input-btn"
 					onChange={uploadImage}
 				/>
 			</div>
 			{/* Get a random image */}
-			<div className="input-group d-flex" style={btnStyles}>
+			<div className="input-group d-flex" id="input-btn">
 				<button className="btn" onClick={getNewImage}>
 					<i className="fas fa-image" aria-hidden="true"></i>
 				</button>
@@ -86,7 +78,7 @@ export default function MemeImage({ meme, setMeme, allMemes }) {
 					type="button"
 					className="form-control d-flex"
 					onClick={getNewImage}
-					style={btnStyles}
+					id="input-btn"
 					value="Get a random meme image"
 					readOnly
 				/>

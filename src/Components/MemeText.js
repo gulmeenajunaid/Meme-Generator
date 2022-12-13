@@ -9,24 +9,18 @@ export default function MemeText({ meme, setMeme }) {
 			[name]: memeText,
 		});
 	}
-	const btnStyles = {
-		background: "linear-gradient(180deg, #FFFFFF 0%, #669592 100%)",
-		borderRadius: "10px",
-		color: "rgba(3, 66, 62, 0.9)",
-		fontWeight: "600",
-		border: "none",
-	};
+
 	return (
 		<form className="container mt-4">
 			<p className="text-light fw-bold h5 mb-2">2. Enter meme text</p>
 
-			<div className="input-group d-flex mb-3" style={btnStyles}>
+			<div className="input-group d-flex mb-3" id="input-btn">
 				<button type="button" className="btn">
 					<i className="fa-sharp fas fa-font" aria-hidden="true"></i>
 				</button>
 				<input
 					className="form-control d-flex"
-					style={btnStyles}
+					id="input-btn"
 					type="text"
 					placeholder="Text at Top"
 					value={meme.topText}
@@ -34,13 +28,13 @@ export default function MemeText({ meme, setMeme }) {
 					onChange={handleChange}
 				/>
 			</div>
-			<div className="input-group d-flex mb-3" style={btnStyles}>
+			<div className="input-group d-flex mb-3" id="input-btn">
 				<button type="button" className="btn">
 					<i className="fa-sharp fas fa-font" aria-hidden="true"></i>
 				</button>
 				<input
 					className="form-control"
-					style={btnStyles}
+					id="input-btn"
 					type="text"
 					placeholder="Text at Bottom"
 					value={meme.bottomText}
