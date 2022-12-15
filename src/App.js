@@ -10,7 +10,7 @@ function App() {
 	const [meme, setMeme] = useState({
 		topText: "",
 		bottomText: "",
-		randomImg: "https://i.imgflip.com/9vct.jpg",
+		randomImg: "Images/1.jpg",
 	});
 	const [allMemes, setAllMemes] = useState([]);
 	const [textColor, setTextColor] = useState("#000000");
